@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.content {
+  /* this is needed or the background will be offset by a few pixels at the top */
+  overflow: auto;
+  position: relative;
+}
+
+.content::before {
+  content: '';
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  display: block;
+  background: url('../images/236-2365183_pc-wallpaper-technology.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+html,
+body {
+  background-color: #f0f8ff00;
+  font-family: 'IBM Plex Sans KR', sans-serif;
+
+}

@@ -1,0 +1,17 @@
+.mask--circle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    60.79% 60.79% at 50% 50%,
+    rgba(0, 0, 0, 0) 0%,
+    #000000 100%
+  );
+}
+
+.mask--trasparency {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.39);
+}
