@@ -1,0 +1,50 @@
+.slide-wrapper {
+  width: 97%;
+}
+
+.slide-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: all 0.3s ease;
+  width: 318px;
+  height: 215px;
+  margin: 80px 18px;
+  background-color: #ffffff48;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.slide-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 15px rgba(122, 116, 116, 0.5);
+}
+
+.slide-card > h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 21px;
+  color: #000000;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-self: center;
+}
+
+.slide-card > svg {
+  margin-top: 10px;
+  align-self: center;
+  color: rgba(112, 3, 3, 0.813);
+  font-size: 40px;
+}
+
+.slide-card > ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.slide-card_skills__items {
+  color: black;
+  text-align: center;
+}

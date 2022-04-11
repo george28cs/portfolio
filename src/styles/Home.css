@@ -2,20 +2,19 @@ main {
   color: white;
   display: flex;
   align-items: center;
-  justify-content: center;
+  flex-direction: column;
 }
 .wrapper-slogan {
   display: flex;
   flex-direction: row;
-  align-items: stretch;
 }
 .wrapper-slogan__title {
-  padding-top: 100px;
+  padding: 60px 0px;
   font-style: normal;
   font-size: 90px;
   font-weight: 400;
   text-align: center;
-  line-height: 85.5%;
+  line-height: 89.5%;
   color: #ffffff;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
