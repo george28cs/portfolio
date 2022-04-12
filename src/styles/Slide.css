@@ -1,5 +1,6 @@
 .slide-wrapper {
   width: 97%;
+  max-height: 50vh;
 }
 
 .slide-card {
@@ -9,10 +10,10 @@
   transition: all 0.3s ease;
   width: 318px;
   height: 215px;
-  margin: 80px 18px;
-  background-color: #ffffff48;
-  border-radius: 10px;
+  margin: 80px 10px;
+  background-color: #030303db;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
 
 .slide-card:hover {
@@ -25,7 +26,6 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 21px;
-  color: #000000;
   margin-top: 10px;
   margin-bottom: 10px;
   align-self: center;
@@ -34,7 +34,7 @@
 .slide-card > svg {
   margin-top: 10px;
   align-self: center;
-  color: rgba(112, 3, 3, 0.813);
+  color: rgb(133, 132, 132);
   font-size: 40px;
 }
 
@@ -45,6 +45,6 @@
 
 }
 .slide-card_skills__items {
-  color: black;
+  color: rgb(246, 245, 245);
   text-align: center;
 }
