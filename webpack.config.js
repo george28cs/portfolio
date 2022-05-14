@@ -50,5 +50,6 @@ module.exports = {
     static: './dist',
     open: true,
     port: 9000,
+    historyApiFallback: true,
   },
 };

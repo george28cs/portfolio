@@ -4,13 +4,11 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import {
   FaDatabase,
-  FaFileVideo,
-  FaNetworkWired,
   FaBuffer,
-  FaReact,
+  FaHtml5,
   FaLaptopCode,
   FaConnectdevelop,
-  FaCubes,
+  FaCube,
   FaTools,
 } from 'react-icons/fa';
 
@@ -31,12 +29,7 @@ export default function Slides() {
     },
     {
       title: 'Lenguajes de programación',
-      items: [
-        'JavaScript',
-        'TypeScript',
-        'Python 3 básico',
-        'ladder (Rockwell Automation)',
-      ],
+      items: ['JavaScript', 'TypeScript', 'Python 3 básico'],
       icon: <FaLaptopCode />,
     },
     {
@@ -55,29 +48,14 @@ export default function Slides() {
       icon: <FaTools />,
     },
     {
-      title: 'Frameworks frontend',
-      items: ['React (Básico)'],
-      icon: <FaReact />,
+      title: 'Frontend',
+      items: ['React (Básico)', 'HTML5', 'CSS3'],
+      icon: <FaHtml5 />,
     },
     {
-      title: 'Virtualización',
-      items: ['VMware vSphere', 'VirtualBox', 'VMware Workstation'],
-      icon: <FaCubes />,
-    },
-    {
-      title: 'Redes',
-      items: [
-        'Diagnóstico',
-        'Diseño',
-        'Firewalls: pfSense',
-        'Redes industriales: Modbus, Ethernet, ControlNet',
-      ],
-      icon: <FaNetworkWired />,
-    },
-    {
-      title: 'Otros',
-      items: ['Inkscape', 'Gimp', 'Adobe Premiere Pro'],
-      icon: <FaFileVideo />,
+      title: 'ORM',
+      items: ['TypeORM', 'Mongoose', 'Sequelize'],
+      icon: <FaCube />,
     },
   ];
   const settings = {
@@ -86,7 +64,7 @@ export default function Slides() {
     variableWidth: true,
     speed: 500,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 3000,
     accessibility: true,
     focusOnSelect: true,
   };

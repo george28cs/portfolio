@@ -15,15 +15,15 @@ const App = () => {
     <Fragment>
       <Background />
       <div className="content">
-        <HashRouter>
+        <BrowserRouter>
           <Header />
           <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="#projects" element={<Projects />} />
-              <Route path="#contact" element={<Contact />} />
-              <Route path="#about" element={<About />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/about" element={<About />} />
           </Routes>
-        </HashRouter>
+        </BrowserRouter>
       </div>
     </Fragment>
   );
