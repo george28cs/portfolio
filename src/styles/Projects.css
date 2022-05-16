@@ -3,11 +3,33 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 80%;
-  height: 80%;
+  width: 90%;
+  height: 90%;
   text-align: center;
   background-color: #030303db;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: rgb(255, 255, 255);
-  font-weight: 500;
 }
+
+.projects-container__content > div > ul > li {
+  display: flex;
+  overflow-y: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+.projects-container__content > div > ul > li > a {
+  color: azure;
+  cursor: pointer;
+}
+.projects-container__content > div > ul > li > a:hover {
+  color: #a36060;
+}
+
+@media screen and (max-width: 412px) {
+  .projects-container__content{
+    font-size: 12px;
+  }
+}
+

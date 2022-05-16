@@ -29,10 +29,10 @@ export default function Header() {
   }, [isDesktop]);
 
   const items = [
-    { id: 1, value: 'Inicio', link: '/', icon: <FaHome /> },
-    { id: 2, value: 'Quien soy', link: '/about', icon: <FaUserAlt /> },
-    { id: 3, value: 'Proyectos', link: '/projects', icon: <FaTools /> },
-    { id: 4, value: 'Contacto', link: '/contact', icon: <FaPhoneAlt /> },
+    { id: 1, value: 'Inicio', link: '/portfolio', icon: <FaHome /> },
+    { id: 2, value: 'Quien soy', link: '/portfolio/about', icon: <FaUserAlt /> },
+    { id: 3, value: 'Proyectos', link: '/portfolio/projects', icon: <FaTools /> },
+    { id: 4, value: 'Contacto', link: '/portfolio/contact', icon: <FaPhoneAlt /> },
   ];
   const toggleMobileMenu = () => setShowMobileMenu(!showMobileMenu);
   const setDefault = () => (showMobileMenu ? setShowMobileMenu(false) : null);

@@ -1,6 +1,7 @@
 .slide-wrapper {
   width: 97%;
   max-height: 50vh;
+  overflow: hidden;
 }
 
 .slide-card {
@@ -47,4 +48,14 @@
 .slide-card_skills__items {
   color: rgb(246, 245, 245);
   text-align: center;
+}
+
+@media screen and (max-width: 412px) {
+  .slide-wrapper {
+    max-height: 40vh;
+  }
+  .slide-card {
+    margin: 50px 10px;
+  }
+  
 }

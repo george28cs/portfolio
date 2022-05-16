@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   -ms-overflow-style: none; /* for Internet Explorer, Edge */
-  overflow-y: hidden; /* Hide vertical scrollbar */
   overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 

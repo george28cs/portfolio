@@ -14,6 +14,7 @@ import {
 
 import '../styles/Slide.css';
 import SlideCard from './Slide.Card';
+import MoreInfo from './MoreInfo';
 
 export default function Slides() {
   const skills = [
