@@ -4,12 +4,44 @@
   align-items: center;
   justify-content: center;
   width: 90%;
-  height: 90%;
-  text-align: center;
+  min-height: 90%;
   background-color: #030303db;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: rgb(255, 255, 255);
+  font-family: 'IBM Plex Sans KR', sans-serif;  color: rgb(255, 255, 255);
   font-weight: 500;
+  font-size: 14px;
+  position: relative;
+  top: 30px;
+}
+.flex-about-container{
+  display: flex;
+  flex-direction: row;
+}
+ 
+.about-container__content__img {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  max-width:300px;
+}
+
+.about-container__content__img > img {
+  height: auto;  
+  width: auto;
+  border-radius: 10px;
+}
+
+.main_item {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 500;
+  color: rgb(207, 207, 214);
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.ul-about-container{
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 ul > li.about-container__content__item {
@@ -25,6 +57,6 @@ ul > li.about-container__content__item {
 
 @media screen and (max-width: 768px) {
   ul > li.about-container__content__item {
-    font-size: 13px; 
+    font-size: 12px; 
   }
 }

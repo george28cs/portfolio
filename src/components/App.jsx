@@ -9,19 +9,21 @@ import '../styles/index.css';
 import '../styles/App.css';
 import Background from '../containers/Background';
 import About from '../pages/About';
+import brackgroundImg from '../images/bg.jpg';
 const App = () => {
-  
   return (
     <Fragment>
       <Background />
       <div className="content">
+        <img className='background-img' src={brackgroundImg} alt="backound-img" />
         <BrowserRouter>
           <Header />
           <Routes>
-              <Route exact path="/portfolio" element={<Home />} />
-              <Route exact path="/portfolio/projects" element={<Projects />} />
-              <Route exact path="/portfolio/contact" element={<Contact />} />
-              <Route exact path="/portfolio/about" element={<About />} />
+            <Route exact path="/portfolio" element={<Home />} />
+            <Route exact path="/portfolio/projects" element={<Projects />} />
+            <Route exact path="/portfolio/contact" element={<Contact />} />
+            <Route exact path="/portfolio/about" element={<About />} />
+            <Route path="*" element={<Home />} />
           </Routes>
           <Footer />
         </BrowserRouter>

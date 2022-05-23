@@ -5,10 +5,11 @@
   justify-content: center;
   width: 90%;
   height: 90%;
-  text-align: center;
   background-color: #030303db;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: rgb(255, 255, 255);
+  font-family: 'IBM Plex Sans KR', sans-serif;  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 14px;
+  position: relative;
 }
 
 .projects-container__content > div > ul > li {
@@ -17,7 +18,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 10px;
+  margin-bottom: 25px;
 }
 .projects-container__content > div > ul > li > a {
   color: azure;
@@ -30,6 +31,10 @@
 @media screen and (max-width: 412px) {
   .projects-container__content{
     font-size: 12px;
+  }
+
+  .projects-container__content > div > ul > li {
+    margin-bottom: 15px;
   }
 }
 

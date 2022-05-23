@@ -64,6 +64,7 @@ div.header > ul > li {
 }
 
 div.header > ul > li a {
+  overflow: hidden;
   transition: ease all 1.5s;
   display: block;
   text-align: center;
