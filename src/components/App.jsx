@@ -10,8 +10,13 @@ import '../styles/App.css';
 import Background from '../containers/Background';
 import About from '../pages/About';
 import brackgroundImg from '../images/bg.jpg';
+import AppContext from '../context/AppContext';
+import useInitialState from '../hooks/useInitialState';
+
 const App = () => {
+  const initialState = useInitialState()
   return (
+    <AppContext.Provider value={initialState}>
     <Fragment>
       <Background />
       <div className="content">
@@ -29,6 +34,7 @@ const App = () => {
         </BrowserRouter>
       </div>
     </Fragment>
+    </AppContext.Provider>
   );
 };
 

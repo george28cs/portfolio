@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import {
   FaBars,
   FaHome,
@@ -8,12 +8,14 @@ import {
   FaTimes,
 } from 'react-icons/fa';
 import { IconContext } from 'react-icons';
+import AppContext from '../context/AppContext';
 
 import '../styles/Header.css';
 import { Link } from 'react-router-dom';
 
 export default function Header() {
-  const [activeId, setActiveId] = useState(1);
+  const { setSelectedId, state} = useContext(AppContext)
+  const activeId = state.id
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);
 
@@ -52,7 +54,7 @@ export default function Header() {
               <li
                 key={item.id}
                 onClick={() => {
-                  setActiveId(item.id);
+                  setSelectedId(item.id);
                   toggleMobileMenu();
                 }}
               >
