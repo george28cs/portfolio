@@ -5,6 +5,7 @@ import Header from './Header';
 import Home from '../pages/Home';
 import Contact from '../pages/Contact';
 import Projects from '../pages/Projects';
+import NotFound from './NotFound';
 import '../styles/index.css';
 import '../styles/App.css';
 import Background from '../containers/Background';
@@ -28,7 +29,7 @@ const App = () => {
             <Route exact path="/portfolio/projects" element={<Projects />} />
             <Route exact path="/portfolio/contact" element={<Contact />} />
             <Route exact path="/portfolio/about" element={<About />} />
-            <Route path="*" element={<Home />} />
+            <Route path='*' element={<NotFound />}/>
           </Routes>
           <Footer />
         </BrowserRouter>

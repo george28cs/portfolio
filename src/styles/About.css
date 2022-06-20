@@ -60,3 +60,10 @@ ul > li.about-container__content__item {
     font-size: 12px; 
   }
 }
+
+@media screen and (max-width: 410px) {
+  .about-container__content__img  {
+    display: none;
+  }
+}
+
